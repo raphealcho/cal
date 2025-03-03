@@ -77,5 +77,15 @@
             }
         }
     </script>
+
+    <script>
+        // GitHub Pages에서 서브 디렉토리(/cal)에서 실행되도록 설정
+        document.addEventListener("DOMContentLoaded", function () {
+            let expectedPath = "/cal/";
+            if (!window.location.pathname.endsWith(expectedPath)) {
+                window.location.pathname = expectedPath;
+            }
+        });
+    </script>
 </body>
 </html>
